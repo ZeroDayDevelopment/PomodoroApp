@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#101d24">
+
+
+
+
+
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Rules"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/restore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="Restore Default"
+        android:textColor="#BCBBBB"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rules"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/rules"
+        app:layout_constraintTop_toTopOf="@+id/rules" />
+
+    <SeekBar
+
+        android:id="@+id/workseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:max="60"
+        android:min="1"
+        android:progress="25"
+        android:progressBackgroundTint="@color/space"
+        android:progressTint="@color/space"
+        android:thumb="@drawable/seekbar_thumb"
+        app:layout_constraintEnd_toEndOf="@+id/restore"
+        app:layout_constraintStart_toStartOf="@+id/rules"
+        app:layout_constraintTop_toBottomOf="@+id/rules" />
+
+    <TextView
+        android:id="@+id/worktime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Work Time"
+        android:textColor="#BCBBBB"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/workseekbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rules"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/workmin"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="25 mins"
+        android:textColor="#BCBBBB"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/workseekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/worktime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <SeekBar
+        android:id="@+id/shortseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:max="60"
+        android:min="1"
+        android:progress="5"
+        android:progressBackgroundTint="@color/space"
+        android:progressTint="@color/space"
+        android:thumb="@drawable/seekbar_thumb"
+        app:layout_constraintEnd_toEndOf="@+id/restore"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="@+id/rules"
+        app:layout_constraintTop_toBottomOf="@+id/workseekbar" />
+
+    <TextView
+        android:id="@+id/shortbreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Short Break"
+        android:textColor="#BCBBBB"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/shortseekbar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/shortbreakmin"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text=" 5 mins"
+        android:textColor="#BCBBBB"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/shortseekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/shortbreak" />
+
+
+    <SeekBar
+        android:id="@+id/longseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:max="60"
+        android:progress="15"
+        android:min="1"
+        android:progressBackgroundTint="@color/space"
+        android:progressTint="@color/space"
+        android:thumb="@drawable/seekbar_thumb"
+        app:layout_constraintEnd_toEndOf="@+id/restore"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/rules"
+        app:layout_constraintTop_toBottomOf="@+id/shortseekbar" />
+
+    <TextView
+        android:id="@+id/longbreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Long Break"
+        android:textColor="#BCBBBB"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/longseekbar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/longbreakmin"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="15 mins"
+        android:textColor="#BCBBBB"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/longseekbar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <SeekBar
+        android:id="@+id/sessionseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:max="10"
+        android:min="1"
+        android:progress="4"
+        android:progressBackgroundTint="@color/space"
+        android:progressTint="@color/space"
+        android:thumb="@drawable/seekbar_thumb"
+        app:layout_constraintEnd_toEndOf="@+id/restore"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="@+id/rules"
+        app:layout_constraintTop_toBottomOf="@+id/longseekbar" />
+
+    <TextView
+        android:id="@+id/session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Session Rounds"
+        android:textColor="#BCBBBB"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/sessionseekbar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sessionmin"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="4 rounds"
+        android:textColor="#BCBBBB"
+        android:textSize="15dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/sessionseekbar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
