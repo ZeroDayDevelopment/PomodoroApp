@@ -4,7 +4,7 @@
     android:innerRadiusRatio="2.5"
     android:thickness="5dp"
     android:useLevel="false"
+    android:tint="@color/space"
     >
-<solid android:color="#0199f7"/>
 
 </shape>

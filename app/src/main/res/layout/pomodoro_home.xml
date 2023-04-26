@@ -5,17 +5,16 @@
     android:background="#101d24"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".PomodoroHome">
 
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    <ImageView
+        android:id="@+id/circle_shape"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/circle_shape"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/circle_shape"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,14 +25,15 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="25:00"
-        android:textColor="#0199f7"
+        android:textColor="@color/space"
         android:textSize="80sp"
-        app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
-        app:layout_constraintEnd_toEndOf="@+id/progress_bar"
-        app:layout_constraintStart_toStartOf="@+id/progress_bar"
-        app:layout_constraintTop_toTopOf="@+id/progress_bar" />
+        app:layout_constraintBottom_toBottomOf="@+id/circle_shape"
+        app:layout_constraintEnd_toEndOf="@+id/circle_shape"
+        app:layout_constraintStart_toStartOf="@+id/circle_shape"
+        app:layout_constraintTop_toTopOf="@+id/circle_shape" />
 
     <TextView
+        android:textStyle="bold"
         android:id="@+id/tv_session"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,7 +42,6 @@
         android:textColor="#0199f7"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_countdown" />
 

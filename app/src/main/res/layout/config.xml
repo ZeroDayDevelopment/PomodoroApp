@@ -4,12 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".PomodoroHome"
     android:background="#101d24">
-
-
-
-
 
     <TextView
         android:id="@+id/rules"
@@ -38,7 +34,6 @@
         app:layout_constraintTop_toTopOf="@+id/rules" />
 
     <SeekBar
-
         android:id="@+id/workseekbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -191,7 +186,6 @@
         android:text="Session Rounds"
         android:textColor="#BCBBBB"
         android:textSize="20dp"
-
         app:layout_constraintBottom_toTopOf="@+id/sessionseekbar"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -203,7 +197,6 @@
         android:text="4 rounds"
         android:textColor="#BCBBBB"
         android:textSize="15dp"
-
         app:layout_constraintBottom_toTopOf="@+id/sessionseekbar"
         app:layout_constraintEnd_toEndOf="parent" />
 
